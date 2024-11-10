@@ -1,4 +1,4 @@
-import ShowMain from "./showMain";
+import ShowMain from "./ShowMain";
 import SideInfo from "./SideInfo";
 import SeasonCard from "./SeasonCard";
 import Loading from "./Loading";
