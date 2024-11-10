@@ -1,5 +1,5 @@
 import { FaRegClock } from "react-icons/fa";
-import ShowMain from "./showMain";
+import ShowMain from "./ShowMain";
 import SideInfo from "./SideInfo";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
