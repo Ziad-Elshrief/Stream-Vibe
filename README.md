@@ -4,5 +4,7 @@ Stream Vibe is a multipage web app built with React utilizing React Router that 
 
 The design is based on [OTT Dark Theme Website](https://www.figma.com/community/file/1294589591426976269) from figma.
 
+## Deployed Version
 
+[Vercel app](https://stream-vibe-phi.vercel.app/)
 
