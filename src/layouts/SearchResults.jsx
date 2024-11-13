@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import generateSummary from "./generateSummary";
-import Loading from "./Loading";
+import generateSummary from "../utils/generateSummary";
+import Loading from "../components/Loading";
 export default function SearchResults() {
   const [showsDisplayed, setShowsDisplayed] = useState([]);
   const [moviesDisplayed, setMoviesDisplayed] = useState([]);

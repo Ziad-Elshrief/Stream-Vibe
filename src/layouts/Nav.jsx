@@ -1,7 +1,7 @@
 import { FaBars, FaSearch } from "react-icons/fa";
-import Logo from "./assets/images/Logo.png";
+import Logo from "../assets/images/Logo.png";
 import { Link, NavLink } from "react-router-dom";
-import Search from "./Search";
+import Search from "../components/Search";
 
 export default function Nav() {
   return (

@@ -1,4 +1,4 @@
-import SupportPoster from "./assets/images/support.jpg";
+import SupportPoster from "../assets/images/support.jpg";
 
 export default function Support() {
   return (

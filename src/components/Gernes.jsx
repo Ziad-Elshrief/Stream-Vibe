@@ -1,5 +1,5 @@
-import PopularShows from "./PopularShows";
-import PopularMovies from "./PopularMovies";
+import { popularShows, popularMovies } from "../data/popular";
+import Popular from "./Popular";
 
 export default function Gernes() {
   return (
@@ -10,8 +10,8 @@ export default function Gernes() {
           Whether you&apos;re looking for a comedy to make you laugh, a drama to
           make you think, or a documentary to learn something new
         </p>
-        <PopularShows /> 
-        <PopularMovies />
+        <Popular type="show" title="Popular Shows" list={popularShows} />
+        <Popular type="movie" title="Popular Movies" list={popularMovies} />
       </div>
     </main>
   );

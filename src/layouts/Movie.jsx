@@ -1,11 +1,11 @@
 import { FaRegClock } from "react-icons/fa";
-import ShowMain from "./ShowMain";
-import SideInfo from "./SideInfo";
+import ShowMain from "../components/ShowMain";
+import SideInfo from "../components/SideInfo";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Loading from "./Loading";
-import generateSummary from "./generateSummary";
-import Cast from "./Cast";
+import Loading from "../components/Loading";
+import generateSummary from "../utils/generateSummary";
+import Cast from "../components/Cast";
 export default function Movie() {
   const [show, setShow] = useState({});
   const [loading, setLoading] = useState(true);
@@ -17,8 +17,6 @@ export default function Movie() {
         `https://imdb.iamidiotareyoutoo.com/search?tt=tt${id}`
       );
       const showData = await res.json();
-      /* Testing */
-      console.log(showData);
       setShow({
         name: showData.main.originalTitleText.text,
         summary: showData.top.plot.plotText.plainText,

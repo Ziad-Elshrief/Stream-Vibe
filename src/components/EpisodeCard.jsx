@@ -1,5 +1,5 @@
 import { FaRegClock } from "react-icons/fa";
-import generateSummary from "./generateSummary";
+import generateSummary from "../utils/generateSummary";
 
 export default function EpisodeCard({index ,ep}) {
     const episodeNumber = index < 10 ? "0" + index : index;

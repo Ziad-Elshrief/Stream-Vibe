@@ -1,10 +1,12 @@
-import backImage from "./assets/images/Background Images.png" ;
+import backImage from "../assets/images/Background Images.png";
 export default function Trial() {
   return (
     <main className="trial">
       <div className="container">
-        <div className="content text-center text-md-start d-flex flex-column flex-md-row align-items-center"
-        style={{ backgroundImage:`url(${backImage})`}}>
+        <div
+          className="content text-center text-md-start d-flex flex-column flex-md-row align-items-center"
+          style={{ backgroundImage: `url(${backImage})` }}
+        >
           <div className="text-container">
             <h4>Start your free trial today!</h4>
             <p>

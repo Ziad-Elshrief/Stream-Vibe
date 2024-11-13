@@ -1,4 +1,4 @@
-import Landing from "./Landing";
+import Landing from "../components/Landing";
 import { TbError404 } from "react-icons/tb";
 export default function Home() {
   return (

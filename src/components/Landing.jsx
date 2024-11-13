@@ -1,7 +1,7 @@
-import image1 from "./assets/images/Image Container.png";
-import image2 from "./assets/images/Image Container-1.png";
-import image3 from "./assets/images/Image Container-2.png";
-import image4 from "./assets/images/Image Container-3.png";
+import image1 from "../assets/images/Image Container.png";
+import image2 from "../assets/images/Image Container-1.png";
+import image3 from "../assets/images/Image Container-2.png";
+import image4 from "../assets/images/Image Container-3.png";
 export default function Landing({children}) {
   return (
     <div className="landing">

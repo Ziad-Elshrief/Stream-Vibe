@@ -1,11 +1,11 @@
-import ShowMain from "./ShowMain";
-import SideInfo from "./SideInfo";
-import SeasonCard from "./SeasonCard";
-import Loading from "./Loading";
+import ShowMain from "../components/ShowMain";
+import SideInfo from "../components/SideInfo";
+import SeasonCard from "../components/SeasonCard";
+import Loading from "../components/Loading";
 import {useParams } from "react-router-dom";
-import generateSummary from "./generateSummary";
+import generateSummary from "../utils/generateSummary";
 import { useEffect, useState } from "react";
-import Cast from "./Cast";
+import Cast from "../components/Cast";
 export default function TVShow() {
   const [show, setShow] = useState({});
   const [loading ,setLoading] =useState(true);

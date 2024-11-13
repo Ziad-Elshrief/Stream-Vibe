@@ -1,15 +1,15 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./style.css";
-import SiteLayout from "./SiteLayout"; import Home from "./Home";
+import SiteLayout from "./SiteLayout"; import Home from "./layouts/Home";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Support from "./Support";
-import TVShow from "./TVShow";
-import Movie from "./Movie";
-import Prices from "./Prices";
-import NotFound from "./NotFound";
-import SearchResults from "./SearchResults";
-import MoviesShows from "./MoviesShows";
+import Support from "./layouts/Support";
+import TVShow from "./layouts/TVShow";
+import Movie from "./layouts/Movie";
+import Prices from "./components/Prices";
+import NotFound from "./layouts/NotFound";
+import SearchResults from "./layouts/SearchResults";
+import MoviesShows from "./layouts/MoviesShows";
 import { useEffect } from "react";
 
 function App() {

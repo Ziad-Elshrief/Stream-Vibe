@@ -1,5 +1,5 @@
 import { FaPlay, FaRegThumbsUp, FaVolumeUp } from "react-icons/fa";
-import { FaPlus } from "react-icons/fa6"; import generateSummary from "./generateSummary"
+import { FaPlus } from "react-icons/fa6"; import generateSummary from "../utils/generateSummary"
 export default function ShowMain({show, thumbnail}) {
   return (
     <main className="show-main">
