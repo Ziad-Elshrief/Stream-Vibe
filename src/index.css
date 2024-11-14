@@ -93,6 +93,8 @@
     background-color: var(--black-10);
 }
 
+/* mt-[60px] grid gap-5 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] */
+
 .three-grid {
     margin-top: 60px;
     display: grid;
@@ -274,7 +276,7 @@ nav .search input:focus {
     }
 }
 
-.prices .container {
+/* .prices .container {
     .plan-card {
         background-color: var(--black-10);
         border: 1px solid var(--black-15);
@@ -297,7 +299,7 @@ nav .search input:focus {
         }
 
     }
-}
+} */
 
 
 /* .trial .container .content {
