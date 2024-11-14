@@ -1,6 +1,3 @@
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "./style.css";
 import SiteLayout from "./SiteLayout"; import Home from "./layouts/Home";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Support from "./layouts/Support";
