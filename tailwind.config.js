@@ -29,6 +29,9 @@ export default {
       fontFamily: {
         manrope: "Manrope",
       },
+      transitionProperty: {
+        height:"height",
+      },
     },
   },
   corePlugins: {

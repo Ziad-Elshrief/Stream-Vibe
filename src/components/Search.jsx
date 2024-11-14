@@ -1,7 +1,7 @@
 import { FaSearch } from "react-icons/fa";
 import { createSearchParams, useNavigate } from "react-router-dom";
 
-export default function Search() {
+export default function Search({isExpanded}) {
   const navigate = useNavigate();
   function searchHandler(e) {
     e.preventDefault();
@@ -14,7 +14,7 @@ export default function Search() {
   }
   return (
     <form
-      className="mt-3 shadow-md flex w-fit"
+      className={`mt-3 shadow-md flex w-fit overflow-hidden transition-height delay-0 duration-300 ${isExpanded? "h-[54px]": "h-0"}`}
       onSubmit={(e) => searchHandler(e)}
     >
       <input

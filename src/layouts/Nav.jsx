@@ -2,12 +2,13 @@ import { FaBars, FaSearch } from "react-icons/fa";
 import Logo from "../assets/images/Logo.png";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import Search from "../components/Search";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export default function Nav() {
   const [isSearchExpanded, setIsSearchExpanded] = useState(false);
   const [isMenuExpanded, setIsMenuExpanded] = useState(false);
   const location = useLocation();
+  const linksMenu = useRef(null);
   return (
     <nav className="py-6">
       <div className="container">
@@ -20,12 +21,13 @@ export default function Nav() {
             />
           </Link>
           <div
-            className={`flex-[0_0_100%] lg:flex-initial bg-black06 rounded-lg p-2 border-[3px] border-black12 mt-2 shadow-md order-last lg:order-none ${
-              isMenuExpanded ? "" : "hidden lg:block"
+            ref={linksMenu}
+            className={`lg:h-auto transition-height delay-0 duration-300 overflow-hidden flex-[0_0_100%] lg:flex-initial rounded-lg bg-black06 mt-2 order-last lg:order-none ${
+              isMenuExpanded ? "h-[222px]" : "h-0 "
             }`}
             id="links"
           >
-            <ul className="flex flex-col lg:flex-row gap-2">
+            <ul className="flex flex-col lg:flex-row gap-2 p-2 border-[3px] border-black12 rounded-lg">
               <li>
                 <NavLink
                   className={`p-3 block text-sm hover:rounded-lg hover:bg-black10 ${
@@ -92,7 +94,7 @@ export default function Nav() {
             </button>
           </div>
         </div>
-        {isSearchExpanded && <Search />}
+        <Search isExpanded={isSearchExpanded} />
       </div>
     </nav>
   );
