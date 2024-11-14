@@ -22,13 +22,13 @@
     text-decoration: none;
 } */
 
-p {
+/* p {
     margin: 0;
     padding: 0;
     color: var(--gray-60);
     line-height: 1.5;
     text-wrap: balance;
-}
+} */
 
 /* ul {
     list-style: none;
@@ -36,9 +36,9 @@ p {
     margin: 0;
 } */
 
-main {
+/* main {
     margin-bottom: 80px;
-}
+} */
 
 /* nav .control-btn svg {
     width: 20px;
@@ -49,7 +49,9 @@ main {
     margin: 0;
 } */
 
-.red-btn {
+/* w-fit text-sm  bg-red45 text-white px-4 py-3.5 rounded-lg outline-none border-0 focus-within:border focus-within:border-black15 */ 
+
+/* .red-btn {
     font-size: 0.875rem;
     line-height: 1.5;
     background-color: red;
@@ -63,9 +65,12 @@ main {
 
 .red-btn:focus-visible {
     outline: 1px solid var(--black-15);
-}
+} */
 
-.black-btn {
+/* w-fit text-sm  bg-black08 text-white px-4 py-3.5 rounded-lg outline-none border border-black15 focus-within:border-red45 */ 
+
+
+/* .black-btn {
     font-size: 0.875rem;
     line-height: 1.5;
     background-color: var(--black-08);
@@ -79,7 +84,7 @@ main {
 
 .black-btn:focus-visible {
     border: 1 px solid var(--red-45);
-}
+} */
 
 .icon-wrapper {
     padding: 1rem;
@@ -219,7 +224,7 @@ nav .search input:focus {
     opacity: 0.85;
 } */
 
-.site-info .container {
+/* .site-info .container {
     h2 {
         font-size: 3rem;
     }
@@ -230,7 +235,7 @@ nav .search input:focus {
     }
 
 
-}
+} */
 
 .devices .container {
     .device-card {
@@ -295,27 +300,27 @@ nav .search input:focus {
 }
 
 
-.trial .container .content {
+/* .trial .container .content {
     padding: 80px 60px;
     gap: 100px;
     border-radius: 12px;
     border: 1px solid var(--black-15);
     background-size: auto;
     background-position: right top;
-}
+} */
 
-@media (max-width:575px) {
+/* @media (max-width:575px) {
     .trial .container .content {
         padding: 50px 30px;
         gap: 50px;
     }
-}
+} */
 
-.trial .text-container {
+/* .trial .text-container {
     h4 {
         font-size: 1.75rem;
     }
-}
+} */
 
 /* footer {
     background-color: var(--black-06);
