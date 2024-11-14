@@ -45,28 +45,26 @@ export default function Movie() {
   ) : (
     <>
       <ShowMain show={show} thumbnail={show.image} />
-      <main className="show-details">
-        <div className="container">
-          <div className="row align-items-start">
-            <div className="main-info col-lg-8">
-              {show.runtime >0 && <section className="runtime show-section">
-                <h2>Runtime</h2>
+      <main className="mb-20">
+        <div className="container lg:grid lg:grid-cols-[2fr_1fr] gap-5 items-start ">
+            <div>
+              {show.runtime >0 && <section className="bg-black10 border border-black15 rounded-[10px] mb-5 p-[30px]">
+                <h2 className="text-gray60 font-bold mb-3">Runtime</h2>
                 <div className="time">
-                  <FaRegClock className="mb-1 me-2" />{" "}
+                  <FaRegClock className="mb-1 mr-2 inline-block" />
                   {calcRuntime(show.runtime)}
                 </div>
               </section>}
-              <section className="description show-section">
-                <h2>Description</h2>
+              <section className="bg-black10 border border-black15 rounded-[10px] mb-5 p-[30px]">
+                <h2 className="text-gray60 font-bold mb-3">Description</h2>
                 <p>{generateSummary(show.summary, 0)}</p>
               </section>
-              <section className="show-section cast">
+              <section className="bg-black10 border border-black15 rounded-[10px] mb-5 p-[30px]">
                 <Cast cast={show.cast} isMovie={true} />
               </section>
             </div>
             <SideInfo info={show} director={true} />
           </div>
-        </div>
       </main>
     </>
   );

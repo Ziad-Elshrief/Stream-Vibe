@@ -1,19 +1,14 @@
 import Landing from "../components/Landing";
 import { TbError404 } from "react-icons/tb";
-export default function Home() {
+export default function NotFound() {
   return (
     <>
       <Landing>
-        <div id="logo">
-          <TbError404
-            className="d-block notFound"
-          />
-         <h2>Page Not Found</h2>
+        <div className="absolute top-1/2 left-1/2 z-20 w-1/4  -translate-x-2/4 -translate-y-2/4 ">
+          <TbError404 className="block size-48 text-red45 fill-black06" />
+          <h2 className="font-bold text-2xl">Page Not Found</h2>
         </div>
       </Landing>
-      <div className="container text-center mb-5 fw-bolc">
-        
-      </div>
     </>
   );
 }

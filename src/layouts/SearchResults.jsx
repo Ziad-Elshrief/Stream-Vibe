@@ -43,36 +43,38 @@ export default function SearchResults() {
   return loading ? (
     <Loading />
   ) : (
-    <main>
+    <main className="mb-20">
       <div className="container">
-        <h2>
+        <h2 className="font-bold text-[1.75rem] mb-4">
           {"Search Results for " +
             location.search.slice(3).replaceAll(/\+|%20/gi, " ")}
         </h2>
         {showsDisplayed.length === 0 && moviesDisplayed.length === 0 && (
-          <p className="display-6">Nothing Found</p>
+          <p className="text-gray60 text-3xl">Nothing Found</p>
         )}
         {showsDisplayed.length > 0 && (
           <>
-            <h3 className="mt-5">Shows</h3>
-            <div className="three-grid m-0">
+            <h3 className="mt-12 mb-4 text-2xl">Shows</h3>
+            <div className="grid gap-5 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
               {showsDisplayed.map((show, index) => (
                 <div
-                  className="search-result d-flex align-items-start"
+                  className=" flex bg-black06 rounded-lg p-3 shadow-md"
                   key={index}
                 >
-                  <Link to={`/show/${show.id}`} state={show}>
+                  <Link className="flex-shrink-0" to={`/show/${show.id}`} state={show}>
                     <img
                       src={show.image.medium}
                       alt={show.name}
-                      className="me-3"
+                      className="mr-4 w-[100px] rounded-lg cursor-pointer"
                     />
                   </Link>
-                  <div className="search-info">
+                  <div className="text-balance">
                     <Link to={`/show/${show.id}`} state={show}>
-                      <h6>{show.name}</h6>
+                      <h6 className="w-fit cursor-pointer">{show.name}</h6>
                     </Link>
-                    <p>{generateSummary(show.summary, 100)}</p>
+                    <p className="text-gray60 text-balance">
+                      {generateSummary(show.summary, 100)}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -81,8 +83,8 @@ export default function SearchResults() {
         )}
         {moviesDisplayed.length > 0 && (
           <>
-            <h3 className="mt-5">Movies</h3>
-            <div className="d-flex gap-3 flex-wrap ">
+            <h3 className="mt-12 mb-4 text-2xl">Movies</h3>
+            <div className="flex items-start gap-4 flex-wrap shadow-md ">
               {moviesDisplayed
                 .filter(
                   (movie) =>
@@ -92,17 +94,21 @@ export default function SearchResults() {
                 )
                 .map((movie) => (
                   <div
-                    className="search-result movie d-flex flex-column align-items-center"
+                    className="w-[200px] flex flex-col items-center bg-black06 rounded-lg p-3"
                     key={movie["#IMDB_ID"]}
                   >
                     <Link to={`/movie/${movie["#IMDB_ID"].slice(2)}`}>
-                      <img src={movie["#IMG_POSTER"]} alt={movie["#AKA"]} />
+                      <img
+                        src={movie["#IMG_POSTER"]}
+                        alt={movie["#AKA"]}
+                        className="flex-1 w-[100px] rounded-lg cursor-pointer"
+                      />
                     </Link>
-                    <div className="search-info">
-                      <Link to={`/movie/${movie["#IMDB_ID"].slice(2)}`}>
-                        <h6 className="mt-3 text-center">{movie["#AKA"]}</h6>
-                      </Link>
-                    </div>
+                    <Link to={`/movie/${movie["#IMDB_ID"].slice(2)}`}>
+                      <h6 className="mt-4 text-center text-balance cursor-pointer w-fit">
+                        {movie["#AKA"]}
+                      </h6>
+                    </Link>
                   </div>
                 ))}
             </div>
