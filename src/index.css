@@ -317,56 +317,56 @@ nav .search input:focus {
     }
 }
 
-footer {
+/* footer {
     background-color: var(--black-06);
     padding: 80px 0 40px;
 
     .row>* {
         padding: 0;
     }
-}
+} */
 
-footer .footer-links li:not(:first-of-type) {
+/* footer .footer-links li:not(:first-of-type) {
     color: var(--gray-60);
     padding-top: 10px;
-}
+} */
 
-footer .footer-links li:first-of-type,
+/* footer .footer-links li:first-of-type,
 footer h5 {
     font-size: 1.125rem;
     font-weight: 500;
     padding-bottom: 10px;
-}
+} */
 
-footer .info {
+/* footer .info {
     margin-top: 80px;
     border-top: 1px solid var(--black-15);
     padding-top: 20px;
     color: var(--gray-60);
-}
+} */
 
-footer .info li:not(:first-of-type) {
+/* footer .info li:not(:first-of-type) {
     padding-left: 1rem;
     border-left: 1px solid var(--black-15);
-}
+} */
 
-footer .info li:not(:last-of-type) {
+/* footer .info li:not(:last-of-type) {
     padding-right: 1rem;
-}
+} */
 
-footer .socials {
+/* footer .socials {
     display: flex;
     column-gap: 10px;
 
     .icon-wrapper {
         padding: 0.5rem;
     }
-}
+} */
 
-footer .socials svg {
+/* footer .socials svg {
     width: 20px;
     height: 20px;
-}
+} */
 
 
 
