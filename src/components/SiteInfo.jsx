@@ -16,7 +16,7 @@ export default function SiteInfo() {
             content you want to watch.
           </p>
           <button className="w-fit text-sm  bg-red45 text-white px-4 py-3.5 rounded-lg outline-none border-0 focus-within:border focus-within:border-black15">
-            <FaPlay className="me-2 inline-block" /> Start Watching Now
+            <FaPlay className="mr-2 mb-1 inline-block" /> Start Watching Now
           </button>
         </div>
       </div>

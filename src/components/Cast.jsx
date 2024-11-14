@@ -15,18 +15,24 @@ export default function Cast({ cast, isMovie = false }) {
   }
   return (
     <>
-      <div className="d-flex justify-content-between align-items-center">
-        <h2>Cast</h2>
-        <div>
-          <button className="red-btn me-2" onClick={decreasePosition}>
-            <FaArrowLeft />
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-gray60 font-bold text-base">Cast</h2>
+        <div className="space-x-2">
+          <button
+            className="w-fit  bg-black08 text-gray60 p-3 outline-none border border-black15 rounded-full focus-within:border-black10"
+            onClick={decreasePosition}
+          >
+            <FaArrowLeft className="size-5 pointer-events-none" />
           </button>
-          <button className="red-btn" onClick={increasePosition}>
-            <FaArrowRight />
+          <button
+            className="w-fit  bg-black08 text-gray60 p-3 outline-none border border-black15 rounded-full focus-within:border-black10"
+            onClick={increasePosition}
+          >
+            <FaArrowRight className="size-5 pointer-events-none" />
           </button>
         </div>
       </div>
-      <div className="d-flex align-items-start flex-wrap">
+      <div className="flex items-start flex-wrap h-[89px] overflow-hidden gap-x-[10px]">
         {cast.map((member, index) => (
           <img
             key={isMovie ? member.node.name.id : member.person.id}
@@ -43,10 +49,12 @@ export default function Cast({ cast, isMovie = false }) {
             title={
               isMovie ? member.node.name.nameText.text : member.person.name
             }
-            className={index >= position ? "" : "d-none"}
+            className={`rounded-[10px] object-cover object-top h-[89px] w-[87.5px] ${
+              index >= position ? "" : "hidden"
+            }`}
           />
         ))}
-      </div>{" "}
+      </div>
     </>
   );
 }
