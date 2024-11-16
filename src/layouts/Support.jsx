@@ -35,7 +35,7 @@ export default function Support() {
               name="First Name"
               id="first-name"
               placeholder="Enter First Name"
-              className="mb-10 w-full bg-black08 text-gray60 text-sm p-4 border border-black15 rounded-md caret-red45 focus:border-red45  focus:outline-none"
+              className="mb-10 w-full bg-black08 text-gray60 text-sm p-4 border border-black15 rounded-md caret-red45 focus:border-red45  focus:outline-none placeholder:opacity-60"
             />
           </div>
           <div className="last-box">
@@ -47,7 +47,7 @@ export default function Support() {
               name="Last Name"
               id="last-name"
               placeholder="Enter Last Name"
-              className="mb-10 w-full bg-black08 text-gray60 text-sm p-4 border border-black15 rounded-md caret-red45 focus:border-red45  focus:outline-none"
+              className="mb-10 w-full bg-black08 text-gray60 text-sm p-4 border border-black15 rounded-md caret-red45 focus:border-red45  focus:outline-none placeholder:opacity-60"
             />
           </div>
           <div className="mail-box">
@@ -59,7 +59,7 @@ export default function Support() {
               name="email"
               id="email"
               placeholder="Enter your Email"
-              className="mb-10 w-full bg-black08 text-gray60 text-sm p-4 border border-black15 rounded-md caret-red45 focus:border-red45  focus:outline-none"
+              className="mb-10 w-full bg-black08 text-gray60 text-sm p-4 border border-black15 rounded-md caret-red45 focus:border-red45  focus:outline-none placeholder:opacity-60"
             />
           </div>
           <div className="phone-box">
@@ -71,7 +71,7 @@ export default function Support() {
               name="phone"
               id="phone"
               placeholder="Enter Phone Number"
-              className="mb-10 w-full bg-black08 text-gray60 text-sm p-4 border border-black15 rounded-md caret-red45 focus:border-red45  focus:outline-none"
+              className="mb-10 w-full bg-black08 text-gray60 text-sm p-4 border border-black15 rounded-md caret-red45 focus:border-red45  focus:outline-none placeholder:opacity-60"
             />
           </div>
           <div className="message-box md:col-span-2">
@@ -82,7 +82,7 @@ export default function Support() {
               name="message"
               id="message"
               placeholder="Enter your Message"
-              className="resize-none min-h-[110px] mb-10 w-full bg-black08 text-gray60 text-sm p-4 border border-black15 rounded-md caret-red45 focus:border-red45 focus:outline-none"
+              className="resize-none min-h-[110px] mb-10 w-full bg-black08 text-gray60 text-sm p-4 border border-black15 rounded-md caret-red45 focus:border-red45 focus:outline-none placeholder:opacity-60"
             ></textarea>
           </div>
           <div className="py-2 flex items-center gap-2 md:justify-center">

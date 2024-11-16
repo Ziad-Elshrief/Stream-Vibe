@@ -22,7 +22,7 @@ export default function Nav() {
           </Link>
           <div
             ref={linksMenu}
-            className={`lg:h-auto transition-height delay-0 duration-300 overflow-hidden flex-[0_0_100%] lg:flex-initial rounded-lg bg-black06 mt-2 order-last lg:order-none ${
+            className={`lg:h-auto transition-height delay-0 duration-300 overflow-hidden flex-[0_0_100%] lg:flex-initial rounded-lg bg-black06 mt-2 lg:mt-0 order-last lg:order-none ${
               isMenuExpanded ? "h-[222px]" : "h-0 "
             }`}
             id="links"
