@@ -97,6 +97,7 @@ export default function Support() {
             </label>
           </div>
           <input
+            aria-label="Send message"
             type="submit"
             value="Send Message"
             className="w-fit text-sm bg-red45 text-white px-4 py-3.5 rounded-lg outline-none border-0 focus-within:border focus-within:border-black15 mt-2 md:mt-0 justify-self-end self-center"

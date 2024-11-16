@@ -13,19 +13,23 @@ export default function SeasonCard({ index, eps }) {
           {seasonEps.length} Episodes
         </p>
         <button
+          aria-label="show or hide episodes"
           className="w-fit  bg-black08 text-gray60 p-3 outline-none border border-black15 rounded-full focus-within:border-black10"
           aria-expanded={isExpanded}
           aria-controls="episodes"
-          onClick={()=> setIsExpanded(prev => !prev)}
+          onClick={() => setIsExpanded((prev) => !prev)}
         >
-          {isExpanded? (
+          {isExpanded ? (
             <FaArrowUp className="size-6 pointer-events-none" />
           ) : (
             <FaArrowDown className="size-6 pointer-events-none" />
           )}
         </button>
       </div>
-      <div className={`${isExpanded? "pt-5":"hidden"} `} id={`season${seasonNumber}-eps`}>
+      <div
+        className={`${isExpanded ? "pt-5" : "hidden"} `}
+        id={`season${seasonNumber}-eps`}
+      >
         {seasonEps.map((ep, index) => (
           <EpisodeCard index={index + 1} key={index} ep={ep} />
         ))}

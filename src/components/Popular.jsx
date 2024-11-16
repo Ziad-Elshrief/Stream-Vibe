@@ -14,9 +14,9 @@ export default function Popular({ list, type, title }) {
               <img src={item.image} alt={item.name} className="w-[120px]" />
             </Link>
             <Link to={`/${type}/${item.id}`}>
-              <h4 className="mt-4 px-3 py-2 rounded-full text-center text-wrap text-gray60 bg-black08 border border-black15">
+              <h3 className="mt-4 px-3 py-2 rounded-full text-center text-wrap text-gray60 bg-black08 border border-black15">
                 {item.name}
-              </h4>
+              </h3>
             </Link>
           </div>
         ))}

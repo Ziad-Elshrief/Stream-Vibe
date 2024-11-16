@@ -15,7 +15,10 @@ export default function SiteInfo() {
             can also create your own watchlists, so you can easily find the
             content you want to watch.
           </p>
-          <button className="w-fit text-sm  bg-red45 text-white px-4 py-3.5 rounded-lg outline-none border-0 focus-within:border focus-within:border-black15">
+          <button
+            aria-label="Start Watching"
+            className="w-fit text-sm  bg-red45 text-white px-4 py-3.5 rounded-lg outline-none border-0 focus-within:border focus-within:border-black15"
+          >
             <FaPlay className="mr-2 mb-1 inline-block" /> Start Watching Now
           </button>
         </div>

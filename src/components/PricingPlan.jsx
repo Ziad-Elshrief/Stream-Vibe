@@ -7,10 +7,16 @@ export default function PricingPlan({ title, description, price }) {
         ${price} <span className="text-base text-gray60 ">/Month</span>
       </h4>
       <div className="flex gap-2">
-        <button className=" w-fit text-sm  bg-black08 text-white px-4 py-3.5 rounded-lg outline-none border border-black15 focus-within:border-red45">
+        <button
+          aria-label="Start free trial"
+          className=" w-fit text-sm  bg-black08 text-white px-4 py-3.5 rounded-lg outline-none border border-black15 focus-within:border-red45"
+        >
           Start Free Trial
         </button>
-        <button className="w-fit text-sm  bg-red45 text-white px-4 py-3.5 rounded-lg outline-none border-0 focus-within:border focus-within:border-black15">
+        <button
+          aria-label="Choose plan"
+          className="w-fit text-sm  bg-red45 text-white px-4 py-3.5 rounded-lg outline-none border-0 focus-within:border focus-within:border-black15"
+        >
           Choose Plan
         </button>
       </div>

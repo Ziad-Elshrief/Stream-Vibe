@@ -6,7 +6,7 @@ export default function ShowMain({ show, thumbnail }) {
     <main className="mb-20">
       <div className="container relative">
         <div className="relative after:absolute after:w-full after:h-full after:top-0 after:left-0 z-10 after:bg-gradient-to-t after:from-black after:to-transparent">
-          <img src={thumbnail} alt="show image" className="w-full" />
+          <img src={thumbnail} fetchPriority="high" alt="show image" className="w-full" />
         </div>
         <div className="mt-4 sm:m-0 sm:absolute sm:z-20 sm:bottom-0 sm:left-1/2 sm:pb-5 sm:-translate-x-2/4 ">
           <div className="mb-6 text-center">

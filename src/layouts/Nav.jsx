@@ -79,6 +79,7 @@ export default function Nav() {
           <div className="w-fit space-x-3.5">
             <button
               className="lg:hidden"
+              aria-label="control menu"
               aria-expanded={isMenuExpanded}
               aria-controls="links"
               onClick={() => setIsMenuExpanded((prev) => !prev)}
@@ -88,6 +89,7 @@ export default function Nav() {
             <button
               aria-expanded={isSearchExpanded}
               aria-controls="search"
+              aria-label="search"
               onClick={() => setIsSearchExpanded((prev) => !prev)}
             >
               <FaSearch className="size-5" />

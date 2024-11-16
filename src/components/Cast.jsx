@@ -19,12 +19,14 @@ export default function Cast({ cast, isMovie = false }) {
         <h2 className="text-gray60 font-bold text-base">Cast</h2>
         <div className="space-x-2">
           <button
+            aria-label="arrow left"
             className="w-fit  bg-black08 text-gray60 p-3 outline-none border border-black15 rounded-full focus-within:border-black10"
             onClick={decreasePosition}
           >
             <FaArrowLeft className="size-5 pointer-events-none" />
           </button>
           <button
+            aria-label="arrow right"
             className="w-fit  bg-black08 text-gray60 p-3 outline-none border border-black15 rounded-full focus-within:border-black10"
             onClick={increasePosition}
           >

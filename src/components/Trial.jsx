@@ -14,7 +14,7 @@ export default function Trial() {
               to sign up for a free trial of StreamVibe.
             </p>
           </div>
-          <button className="flex-shrink-0 w-fit text-sm  bg-red45 text-white px-4 py-3.5 rounded-lg outline-none border-0 focus-within:border focus-within:border-black15">
+          <button aria-label="Start free trial" className="flex-shrink-0 w-fit text-sm  bg-red45 text-white px-4 py-3.5 rounded-lg outline-none border-0 focus-within:border focus-within:border-black15">
             Start a Free Trial
           </button>
         </div>
