@@ -1,7 +1,7 @@
 import backImage from "../assets/images/Background Images.png";
 export default function Trial() {
   return (
-    <main className="mb-20">
+    <main className="my-20">
       <div className="container">
         <div
           className="text-center md:text-start shadow-md py-[50px] px-[30px] gap-[50px] flex flex-col items-center md:flex-row md:gap-[100px] md:py-20 md:px-[60px] rounded-xl border border-black15 bg-auto bg-right-top"
